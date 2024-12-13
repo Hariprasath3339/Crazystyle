@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Scenario1Test">
+		<classes>
+			<class name="Testcases.Scenario1EAccessoriesTest" />
+			<class name="Testcases.Scenario1menAccessoriesTest"></class>
+			<class name="Testcases.Scenario1menTest"></class>
+			<class name="Testcases.Scenario1WomenAccessoriesTest"></class>
+			<class name="Testcases.Scenario1womensTest"></class>
+		</classes>
+	</test> <!--
+	Scenario1Test -->
+</suite> <!--
+Suite -->
