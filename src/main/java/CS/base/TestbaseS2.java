@@ -12,20 +12,23 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public abstract class Testbase {
+public abstract class TestbaseS2 {
 
 	public static Properties prop;
 	public static WebDriver driver;
 	protected JavascriptExecutor js = (JavascriptExecutor) driver;
 
-	public Testbase()
+	public static WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+	public TestbaseS2()
 
 	{
 		try {
-			FileInputStream fis = new FileInputStream("./src/main/java/CS/config/CSconfig.properties");
+			FileInputStream fis = new FileInputStream("./src/main/java/CS/config/CSconfigS2.properties");
 			prop = new Properties();
 			prop.load(fis);
 

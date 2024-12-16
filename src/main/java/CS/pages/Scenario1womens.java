@@ -1,17 +1,12 @@
 package CS.pages;
 
-import java.time.Duration;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import CS.base.Testbase;
+import CS.base.TestbaseS1;
 
-public class Scenario1womens extends Testbase {
+public class Scenario1womens extends TestbaseS1 {
 
 	// web elements
 	@FindBy(linkText = "Account")
@@ -40,7 +35,7 @@ public class Scenario1womens extends Testbase {
 
 	// methods
 
-	public void enteruname(String user, String pass) throws InterruptedException {
+	public void Scenario1womens(String user, String pass) throws InterruptedException {
 		clickaccount.click();
 		js.executeScript("window.scrollBy(0,250)");
 		uname.sendKeys(user);

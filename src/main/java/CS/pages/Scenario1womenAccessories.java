@@ -4,9 +4,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import CS.base.Testbase;
+import CS.base.TestbaseS1;
 
-public class Scenario1womenAccessories extends Testbase {
+public class Scenario1womenAccessories extends TestbaseS1 {
 
 	// web elements
 	@FindBy(linkText = "Account")
