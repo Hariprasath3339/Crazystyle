@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-16T18:20:18 IST" name="Default suite" finished-at="2024-12-16T18:20:37 IST" duration-ms="18786">
+  <suite started-at="2024-12-18T18:17:02 IST" name="Default suite" finished-at="2024-12-18T18:17:48 IST" duration-ms="46226">
     <groups>
     </groups>
-    <test started-at="2024-12-16T18:20:18 IST" name="Default test" finished-at="2024-12-16T18:20:37 IST" duration-ms="18786">
-      <class name="Testcases.Scenario2womensTest">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Testcases.Scenario2womensTest@3bb9a3ff]" started-at="2024-12-16T18:20:18 IST" name="beforeMethod" finished-at="2024-12-16T18:20:21 IST" duration-ms="2137" status="PASS">
+    <test started-at="2024-12-18T18:17:02 IST" name="Default test" finished-at="2024-12-18T18:17:48 IST" duration-ms="46226">
+      <class name="Testcases.Scenario4FiltersTest">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Testcases.Scenario4FiltersTest@333291e3]" started-at="2024-12-18T18:17:02 IST" name="beforeMethod" finished-at="2024-12-18T18:17:05 IST" duration-ms="3654" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="Scenario2womens()[pri:0, instance:Testcases.Scenario2womensTest@3bb9a3ff]" started-at="2024-12-16T18:20:21 IST" name="Scenario2womens" finished-at="2024-12-16T18:20:37 IST" duration-ms="16451" status="PASS">
+        <test-method signature="Scenario4Filters()[pri:0, instance:Testcases.Scenario4FiltersTest@333291e3]" started-at="2024-12-18T18:17:05 IST" name="Scenario4Filters" finished-at="2024-12-18T18:17:48 IST" duration-ms="42531" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Scenario2womens -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Testcases.Scenario2womensTest@3bb9a3ff]" started-at="2024-12-16T18:20:37 IST" name="afterMethod" finished-at="2024-12-16T18:20:37 IST" duration-ms="171" status="PASS">
+        </test-method> <!-- Scenario4Filters -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Testcases.Scenario4FiltersTest@333291e3]" started-at="2024-12-18T18:17:48 IST" name="afterMethod" finished-at="2024-12-18T18:17:48 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- Testcases.Scenario2womensTest -->
+      </class> <!-- Testcases.Scenario4FiltersTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
