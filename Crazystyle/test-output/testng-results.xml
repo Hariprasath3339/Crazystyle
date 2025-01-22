@@ -2,20 +2,20 @@
 <testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-22T10:41:31 IST" name="Default suite" finished-at="2025-01-22T10:41:52 IST" duration-ms="20808">
+  <suite started-at="2025-01-22T11:08:15 IST" name="Default suite" finished-at="2025-01-22T11:08:32 IST" duration-ms="17520">
     <groups>
     </groups>
-    <test started-at="2025-01-22T10:41:31 IST" name="Default test" finished-at="2025-01-22T10:41:52 IST" duration-ms="20808">
+    <test started-at="2025-01-22T11:08:15 IST" name="Default test" finished-at="2025-01-22T11:08:32 IST" duration-ms="17520">
       <class name="AllProductstest.CrazyTest">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:AllProductstest.CrazyTest@72d1ad2e]" started-at="2025-01-22T10:41:31 IST" name="beforeClass" finished-at="2025-01-22T10:41:33 IST" duration-ms="2247" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:AllProductstest.CrazyTest@72d1ad2e]" started-at="2025-01-22T11:08:15 IST" name="beforeClass" finished-at="2025-01-22T11:08:17 IST" duration-ms="2329" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="discountcoupon()[pri:0, instance:AllProductstest.CrazyTest@72d1ad2e]" started-at="2025-01-22T10:41:33 IST" name="discountcoupon" finished-at="2025-01-22T10:41:52 IST" duration-ms="18529" status="PASS">
+        <test-method signature="discountcoupon()[pri:0, instance:AllProductstest.CrazyTest@72d1ad2e]" started-at="2025-01-22T11:08:17 IST" name="discountcoupon" finished-at="2025-01-22T11:08:32 IST" duration-ms="15153" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- discountcoupon -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:AllProductstest.CrazyTest@72d1ad2e]" started-at="2025-01-22T10:41:52 IST" name="afterClass" finished-at="2025-01-22T10:41:52 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:AllProductstest.CrazyTest@72d1ad2e]" started-at="2025-01-22T11:08:32 IST" name="afterClass" finished-at="2025-01-22T11:08:32 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
