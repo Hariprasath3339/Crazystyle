@@ -6,8 +6,8 @@
       <class name="AllProductstest.CrazyTest">
         <methods>
           <include name="afterClass"/>
-          <include name="discountcoupon"/>
           <include name="beforeClass"/>
+          <include name="store"/>
         </methods>
       </class> <!-- AllProductstest.CrazyTest -->
     </classes>

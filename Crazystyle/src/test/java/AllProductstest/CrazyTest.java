@@ -10,40 +10,11 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pages.Discountcoupon;
-import pages.Login;
-import pages.Mousehover;
+import pages.Storepage;
 
 public class CrazyTest {
 
 	public WebDriver driver;
-
-	@Test(enabled = false)
-	public void login() {
-		Login lg = new Login(driver);
-		lg.login("hariprasathnagarajan35@gmail.com", "H@ri$uba3");
-
-	}
-
-	@Test(enabled = false)
-
-	public void mousehover() {
-		Mousehover MH = new Mousehover(driver);
-		MH.mousehoverwomens();
-	}
-
-	@Test(priority = 0)
-
-	public void discountcoupon() throws InterruptedException {
-		Discountcoupon ds = new Discountcoupon(driver);
-		ds.Adminlogin("botble", "159357");
-		ds.Clickpopup1and2();
-		ds.ClickEcomanddiscount();
-		ds.clickcreate();
-		ds.Generatecode();
-		ds.Websitelogin();
-		ds.applycoupon();
-		ds.shipment();
-	}
 
 	@BeforeClass
 	public void beforeClass() {
@@ -57,7 +28,31 @@ public class CrazyTest {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+	//	driver.close();
+	}
+
+	@Test(enabled = false)
+
+	public void discountcoupon() throws InterruptedException {
+		Discountcoupon ds = new Discountcoupon(driver);
+		ds.Adminlogin("botble", "159357");
+		ds.Clickpopup1and2();
+		ds.ClickEcomanddiscount();
+		ds.clickcreate();
+		ds.Generatecode();
+		ds.Websitelogin();
+		ds.applycoupon();
+		ds.shipment();
+	}
+
+	@Test()
+
+	public void store() throws InterruptedException {
+		Storepage ST = new Storepage(driver);
+		ST.Adminlogin1("botble", "159357");
+		ST.Clickpopup();
+		ST.Clickandnavigate();
+		ST.Storedetails();
 	}
 
 }
