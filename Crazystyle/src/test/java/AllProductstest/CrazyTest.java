@@ -56,7 +56,7 @@ public class CrazyTest {
 
 	@AfterClass
 	public void afterClass() {
-		// driver.close();
+		driver.close();
 	}
 
 }
