@@ -51,6 +51,8 @@ public class Discountcoupon extends Baseclass {
 	WebElement upass1;
 	@FindBy(xpath = "(//button[@type='submit'])[2]")
 	WebElement signin;
+	@FindBy(id = "description")
+	WebElement enterorder;
 
 	public void Adminlogin(String user, String pass) throws InterruptedException {
 		uname.sendKeys(user);
@@ -78,7 +80,7 @@ public class Discountcoupon extends Baseclass {
 	}
 
 	public void Generatecode() throws InterruptedException {
-		Entercode.sendKeys("NOVA");
+		Entercode.sendKeys("LEO10");
 		// Generatecode.click();
 		enterdiscount.sendKeys("150");
 		Clicksave.click();
@@ -105,23 +107,46 @@ public class Discountcoupon extends Baseclass {
 		signin.click();
 	}
 
-	public void applycoupon() {
+	public void applycoupon() throws InterruptedException {
 
 		WebElement clickdress = driver.findElement(By.xpath("//a[normalize-space(text())='Floral Cotton Maxi Dress']"));
 		js.executeScript("arguments[0].scrollIntoView(true);", clickdress);
 		js.executeScript("arguments[0].click();", clickdress);
+		Thread.sleep(2000);
 
 		WebElement addtocart = driver.findElement(By.xpath("(//button[@type='submit'])[2]"));
 		js.executeScript("arguments[0].scrollIntoView(true);", addtocart);
 		js.executeScript("arguments[0].click();", addtocart);
-		
+		Thread.sleep(2000);
+
 		WebElement clickthecart = driver.findElement(By.xpath("//a[@class='mini-cart-icon']/following-sibling::a[1]"));
 		js.executeScript("arguments[0].scrollIntoView(true);", clickthecart);
 		js.executeScript("arguments[0].click();", clickthecart);
-		
-		
-		
-		
+		Thread.sleep(2000);
+
+		WebElement clickthecoupocode = driver.findElement(By.xpath("//input[contains(@class,'font-medium mr-15')]"));
+		js.executeScript("arguments[0].scrollIntoView(true);", clickthecoupocode);
+		js.executeScript("arguments[0].click();", clickthecoupocode);
+		clickthecoupocode.sendKeys("LEO10");
+		Thread.sleep(2000);
+
+		WebElement Clickcode = driver.findElement(By.xpath("//button[@class='btn btn-apply-coupon-code']"));
+		js.executeScript("arguments[0].scrollIntoView(true);", Clickcode);
+		js.executeScript("arguments[0].click();", Clickcode);
+		Thread.sleep(2000);
+
+		WebElement Clicktoproceed = driver.findElement(By.xpath("(//button[@type='submit'])[2]"));
+		js.executeScript("arguments[0].scrollIntoView(true);", Clicktoproceed);
+		js.executeScript("arguments[0].click();", Clicktoproceed);
+
+	}
+
+	public void shipment() throws InterruptedException {
+		Thread.sleep(2000);
+		WebElement clickcheckout = driver
+				.findElement(By.xpath("//button[contains(@class,'btn payment-checkout-btn')]"));
+		js.executeScript("arguments[0].scrollIntoView(true);", clickcheckout);
+		js.executeScript("arguments[0].click();", clickcheckout);
 
 	}
 

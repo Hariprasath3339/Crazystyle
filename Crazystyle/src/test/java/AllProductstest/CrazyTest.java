@@ -42,6 +42,7 @@ public class CrazyTest {
 		ds.Generatecode();
 		ds.Websitelogin();
 		ds.applycoupon();
+		ds.shipment();
 	}
 
 	@BeforeClass
