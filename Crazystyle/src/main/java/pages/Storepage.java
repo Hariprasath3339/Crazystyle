@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
 
 import Base.Baseclass;
 
@@ -56,6 +57,20 @@ public class Storepage extends Baseclass {
 	WebElement entercontent;
 	@FindBy(xpath = "//a[@data-action='select-image']")
 	WebElement clickimage;
+	@FindBy(xpath = "//li[contains(.,'red T-shirt')]")
+	WebElement clickred;
+	@FindBy(xpath = "(//button[contains(@class,'btn btn-danger')])[2]")
+	WebElement clickinsert;
+	@FindBy(xpath = "//button[normalize-space(text())='Filters']")
+	WebElement clickfilter;
+	@FindBy(xpath = "(//select[@name='filter_columns[]'])[2]")
+	WebElement clickfilteroptn;
+	@FindBy(xpath = "(//input[@name='filter_values[]'])[2]")
+	WebElement clickfiltervalue;
+	@FindBy(xpath = "//button[@type='submit']")
+	WebElement clickfilterapply;
+	@FindBy(xpath = "//a[normalize-space(text())='Reset']")
+	WebElement clickfilterreset;
 
 	// Methods
 
@@ -105,7 +120,30 @@ public class Storepage extends Baseclass {
 		js.executeScript("arguments[0].scrollIntoView(true);", wb1);
 		js.executeScript("arguments[0].click();", wb1);
 		entercontent.sendKeys("xxxxxxx");
+		Thread.sleep(2000);
 		clickimage.click();
+		clickred.click();
+		clickinsert.click();
+
+		WebElement wb2 = driver.findElement(By.xpath("(//i[@class='fa fa-save'])[1]"));
+		js.executeScript("arguments[0].scrollIntoView(true);", wb2);
+		js.executeScript("arguments[0].click();", wb2);
+
 	}
 
+	public void filter() throws InterruptedException {
+
+		clickfilter.click();
+		clickfilteroptn.click();
+		WebElement clickfiltername = driver.findElement(By.xpath("(//select[@name='filter_columns[]'])[2]"));
+		Select sdrp = new Select(clickfiltername);
+		sdrp.selectByValue("name");
+		Thread.sleep(2000);
+		clickfiltervalue.sendKeys("ABC");
+		Thread.sleep(2000);
+		clickfilterapply.click();
+		Thread.sleep(2000);
+		clickfilterreset.click();
+
+	}
 }

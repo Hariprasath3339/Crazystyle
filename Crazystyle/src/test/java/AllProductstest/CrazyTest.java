@@ -28,7 +28,7 @@ public class CrazyTest {
 
 	@AfterClass
 	public void afterClass() {
-	//	driver.close();
+		 driver.close();
 	}
 
 	@Test(enabled = false)
@@ -53,6 +53,7 @@ public class CrazyTest {
 		ST.Clickpopup();
 		ST.Clickandnavigate();
 		ST.Storedetails();
+		ST.filter();
 	}
 
 }
